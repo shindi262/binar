@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Binar Galih Pamungkas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffdde1;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #ff4d6d;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        .heart {
+            color: red;
+            font-size: 50px;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        button {
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e63950;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Untuk Binar Galih Pamungkas ❤️</h1>
+        <p>Hai sayang, aku cuma mau bilang...</p>
+        <p class="heart">❤️</p>
+        <p>Aku sayang banget sama kamu!</p>
+        <button onclick="showLoveMessage()">Klik Aku!</button>
+        <p id="loveMessage" style="display: none; font-size: 20px; color: #ff4d6d; margin-top: 20px;">
+            Kamu adalah alasan senyumku setiap hari, Binar! 💖
+        </p>
+    </div>
+
+    <script>
+        function showLoveMessage() {
+            document.getElementById("loveMessage").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
